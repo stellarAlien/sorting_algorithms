@@ -4,7 +4,7 @@
  *@arr: array to sort
  *@n: size of arrray
  */
-void bubble_sort(int arr[], int n)
+void bubble_sort(int arr[], size_t n)
 {
 	int i = 0;
 	int temp;
