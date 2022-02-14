@@ -16,7 +16,7 @@ void bubble_sort(int arr[], size_t n)
 
 	iter = n - 1;
 
-	if(n < 1 || arr == NULL)
+	if (n < 1 || arr == NULL)
 		return;
 	do {
 		again = 0;
