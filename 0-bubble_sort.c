@@ -13,6 +13,8 @@ void bubble_sort(int arr[], int n)
 
 	iter = n - 1;
 
+	if(n < 2 || arr == NULL)
+		return;
 	do {
 		again = 0;
 		i = 0;
