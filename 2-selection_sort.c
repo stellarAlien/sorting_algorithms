@@ -1,24 +1,24 @@
 #include "sort.h"
 /**
- *quick
- *
- *
+ *selection_sort - sorts an array with selection sort
+ *@array: array to sort of size(size)
+ *@size: size of array
  */
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min, aux;
 
-	if(size <= 1)
+	if (size <= 1)
 		return;
-	for(i = 0; i < size - 1; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		min = i;
-		for(j = i + 1; j < size; j++)
+		for (j = i + 1; j < size; j++)
 		{
-			if(array[min] > array[j])
+			if (array[min] > array[j])
 				min = j;
 		}
-		if(min != i)
+		if (min != i)
 		{
 			aux = array[i];
 			array[i] = array[min];
